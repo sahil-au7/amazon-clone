@@ -43,7 +43,7 @@ const Header = () => {
         {/* 4th link */}
         <Link className="header__link" to="/checkout">
           <div className="header__optionBasket">
-            <ShoppingCartIcon />
+            <ShoppingCartIcon fontSize="large" />
             <span className="header__optionLineTwo header__basketCount">0</span>
           </div>
         </Link>
