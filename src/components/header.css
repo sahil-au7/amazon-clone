@@ -2,6 +2,9 @@
   background-color: #131921;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header__logo {
@@ -54,4 +57,16 @@
 .header__optionLineTwo {
   font-size: 13px;
   font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header__basketCount {
+  margin-right: 10px;
+  margin-left: 9px;
 }

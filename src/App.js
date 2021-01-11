@@ -1,8 +1,10 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import Header from "./components/Header"
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Checkout from "./components/Checkout";
+import Login from "./components/Login";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,13 +12,15 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/checkout">
-            <h1>checkout</h1>
+            <Header />
+            <Checkout />
           </Route>
-          <Route path="login">
-            <h1>login</h1>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
-            <Header/>
+            <Header />
+            <Home />
           </Route>
         </Switch>
       </div>
